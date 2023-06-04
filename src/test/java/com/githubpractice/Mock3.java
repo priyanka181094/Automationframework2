@@ -13,15 +13,16 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Mock3 {
 	
+	WebDriver driver=null;
 	
-	public WebDriver driver;
 	@Test
 	//@Parameters("browser")
 	public void testing()
-	{
+	{	
 		
 		String BROWSER=System.getProperty("browser");
-		WebDriver driver=null;
+	
+		
 	if(BROWSER.equalsIgnoreCase("Chrome"))
 	  {
 		 // WebDriverManager.chromedriver().setup();
