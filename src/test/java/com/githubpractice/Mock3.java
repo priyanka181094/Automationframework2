@@ -19,8 +19,10 @@ public class Mock3 {
 	@Parameters("browser")
 	public void testing(String browser)
 	{
+		
+		String BROWSER=System.getProperty("browser");
 		WebDriver driver=null;
-	if(browser.equalsIgnoreCase("Chrome"))
+	if(BROWSER.equalsIgnoreCase("Chrome"))
 	  {
 		 // WebDriverManager.chromedriver().setup();
 		 driver=new ChromeDriver();
