@@ -16,8 +16,8 @@ public class Mock3 {
 	
 	public WebDriver driver;
 	@Test
-	@Parameters("browser")
-	public void testing(String browser)
+	//@Parameters("browser")
+	public void testing()
 	{
 		
 		String BROWSER=System.getProperty("browser");
